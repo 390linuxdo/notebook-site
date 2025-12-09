@@ -6,7 +6,8 @@
       "topic": "root",
       "locked": true,
       "url": "/private/",
-      "degree": 1
+      "degree": 1,
+      "code": "LOCK-AD4488"
     },
     {
       "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\public.md",
@@ -14,13 +15,109 @@
       "topic": "root",
       "locked": false,
       "url": "/public/",
-      "degree": 1
+      "degree": 1,
+      "code": null
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\llm.md",
+      "title": "llm",
+      "topic": "ai",
+      "locked": false,
+      "url": "/ai/llm/",
+      "degree": 0,
+      "code": null
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\rag.md",
+      "title": "rag",
+      "topic": "ai",
+      "locked": false,
+      "url": "/ai/rag/",
+      "degree": 0,
+      "code": null
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\macro.md",
+      "title": "macro",
+      "topic": "economic",
+      "locked": false,
+      "url": "/economic/macro/",
+      "degree": 1,
+      "code": null
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\micro.md",
+      "title": "micro",
+      "topic": "economic",
+      "locked": false,
+      "url": "/economic/micro/",
+      "degree": 0,
+      "code": null
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
+      "title": "network",
+      "topic": "linux",
+      "locked": false,
+      "url": "/linux/network/",
+      "degree": 2,
+      "code": null
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\shell.md",
+      "title": "shell",
+      "topic": "linux",
+      "locked": false,
+      "url": "/linux/shell/",
+      "degree": 1,
+      "code": null
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\vpn_notes.md",
+      "title": "VPN Notes (Encrypted)",
+      "topic": "linux",
+      "locked": true,
+      "url": "/linux/vpn_notes/",
+      "degree": 0,
+      "code": "LOCK-506945"
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\linear_algebra.md",
+      "title": "linear_algebra",
+      "topic": "math",
+      "locked": false,
+      "url": "/math/linear_algebra/",
+      "degree": 0,
+      "code": null
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\probability.md",
+      "title": "probability",
+      "topic": "math",
+      "locked": false,
+      "url": "/math/probability/",
+      "degree": 0,
+      "code": null
     }
   ],
   "links": [
     {
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\macro.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
+      "type": "cross",
+      "dir": "a2b"
+    },
+    {
       "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\public.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\private.md"
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\private.md",
+      "type": "oneway",
+      "dir": "a2b"
+    },
+    {
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\shell.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
+      "type": "oneway",
+      "dir": "a2b"
     }
   ]
 }

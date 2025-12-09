@@ -17,3 +17,25 @@ nav:
   - Public: public.md
   - Private: private.md
   - Graph: graph.md
+nav:
+  - Home: index.md
+  - Public: public.md
+  - Private: private.md
+  - Graph: graph.md
+  - Linux:
+      - linux/index.md
+      - linux/shell.md
+      - linux/network.md
+      - linux/vpn_notes.md
+  - AI:
+      - ai/index.md
+      - ai/llm.md
+      - ai/rag.md
+  - Math:
+      - math/index.md
+      - math/linear_algebra.md
+      - math/probability.md
+  - Economic:
+      - economic/index.md
+      - economic/macro.md
+      - economic/micro.md
