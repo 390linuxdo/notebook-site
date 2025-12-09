@@ -7,35 +7,8 @@ plugins:
   - search
   - encryptcontent:
       title_prefix: "[LOCK] "
-      summary: "This page is encrypted."
-      placeholder: "Password"
-      decryption_failure_message: "Wrong password"
+      summary: "此页面已加密。请输入口令解密。"
+      placeholder: "输入口令（可用助记词）"
+      decryption_failure_message: "口令不正确"
       password_inventory:
-        private: !ENV MKDOCS_ENCRYPT_PASSWORD
-nav:
-  - Home: index.md
-  - Public: public.md
-  - Private: private.md
-  - Graph: graph.md
-nav:
-  - Home: index.md
-  - Public: public.md
-  - Private: private.md
-  - Graph: graph.md
-  - Linux:
-      - linux/index.md
-      - linux/shell.md
-      - linux/network.md
-      - linux/vpn_notes.md
-  - AI:
-      - ai/index.md
-      - ai/llm.md
-      - ai/rag.md
-  - Math:
-      - math/index.md
-      - math/linear_algebra.md
-      - math/probability.md
-  - Economic:
-      - economic/index.md
-      - economic/macro.md
-      - economic/micro.md
+        private: 

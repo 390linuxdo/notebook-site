@@ -5,6 +5,7 @@ from collections import defaultdict
 DOCS = Path(__file__).resolve().parents[1] / "docs"
 OUT  = DOCS / "assets" / "graph.json"
 
+# 只排除：根主页 index、图谱页
 EXCLUDE_EXACT = {"index.md", "graph.md"}
 
 link_re = re.compile(r'\[[^\]]+\]\(([^)]+)\)')
@@ -19,9 +20,7 @@ def should_exclude(p: Path) -> bool:
         return True
     if rel in EXCLUDE_EXACT:
         return True
-    if rel.endswith("/index.md"):
-        return True
-    return False
+    return False  # 注意：不再排除 */index.md（要当 hub）
 
 def md_files():
     for p in DOCS.rglob("*.md"):
@@ -33,10 +32,20 @@ def is_locked(text: str) -> bool:
     return bool(fm_level_re.search(text))
 
 def to_url(md_path: Path) -> str:
-    rel = relposix(md_path)
-    if rel.lower() == "index.md":
+    rel = relposix(md_path).replace("\\", "/")
+    lower = rel.lower()
+
+    # 根目录 index.md
+    if lower == "index.md":
         return "/"
-    if rel.endswith(".md"):
+
+    # 主题 index：docs/<topic>/index.md => /<topic>/
+    if lower.endswith("/index.md"):
+        topic = rel.split("/", 1)[0]
+        return "/" + topic.strip("/") + "/"
+
+    # 普通页面
+    if lower.endswith(".md"):
         rel = rel[:-3]
     return "/" + rel.strip("/") + "/"
 
@@ -45,9 +54,17 @@ def topic_of(md_path: Path) -> str:
     return rel[0] if len(rel) > 1 else "root"
 
 def title_of(text: str, md_path: Path) -> str:
+    # 取第一行 # 标题
     for line in text.splitlines():
         if line.startswith("# "):
             return line[2:].strip()
+
+    rel = relposix(md_path).lower()
+
+    # 主题主节点：docs/<topic>/index.md => 用 topic 作为标题（不再显示 index）
+    if rel.endswith("/index.md"):
+        return topic_of(md_path)
+
     return md_path.stem
 
 def stable_code(md_path: Path) -> str:
@@ -78,6 +95,10 @@ def resolve_link(src_path: Path, raw: str):
         return None
     return target
 
+def is_hub(md_path: Path) -> bool:
+    rel = relposix(md_path).lower()
+    return rel.endswith("/index.md")
+
 def main():
     nodes = {}
     directed = set()  # (src_id, tgt_id)
@@ -88,6 +109,7 @@ def main():
         text = p.read_text(encoding="utf-8", errors="ignore")
         pid = str(p.resolve())
         locked = is_locked(text)
+        hub = is_hub(p)
         nodes[pid] = {
             "id": pid,
             "title": title_of(text, p),
@@ -96,6 +118,7 @@ def main():
             "url": to_url(p),
             "degree": 0,
             "code": stable_code(p) if locked else None,
+            "hub": hub
         }
 
     # directed edges
@@ -110,7 +133,7 @@ def main():
             if src_id in nodes and tgt_id in nodes:
                 directed.add((src_id, tgt_id))
 
-    # merge per pair
+    # merge per pair (single line with 1/2 arrows)
     merged = []
     seen_pairs = set()
     for (a, b) in directed:
@@ -124,26 +147,24 @@ def main():
 
         if a2b and b2a:
             dirflag = "both"
-            src, tgt = a, b  # 任意，前端会画双箭头
+            src, tgt = a, b
+            ltype = "mutual"
         elif a2b:
             dirflag = "a2b"
             src, tgt = a, b
+            ltype = "oneway"
         elif b2a:
             dirflag = "b2a"
-            src, tgt = a, b  # 注意：这时箭头应该指向 a（前端处理）
+            src, tgt = a, b
+            ltype = "oneway"
         else:
             continue
 
-        cross = nodes[a]["topic"] != nodes[b]["topic"]
-        ltype = "cross" if cross else ("mutual" if dirflag == "both" else "oneway")
+        # 跨主题统一标 cross（颜色由前端决定）
+        if nodes[a]["topic"] != nodes[b]["topic"]:
+            ltype = "cross"
 
-        merged.append({
-            "source": src,
-            "target": tgt,
-            "type": ltype,
-            "dir": dirflag
-        })
-
+        merged.append({"source": src, "target": tgt, "type": ltype, "dir": dirflag})
         degree[a] += 1
         degree[b] += 1
 
@@ -157,3 +178,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

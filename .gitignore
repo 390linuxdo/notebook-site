@@ -2,3 +2,6 @@
 .vscode/
 # mkdocs-encryptcontent cache
 encryptcontent.cache
+encryptcontent.cache
+site/
+.vscode/
