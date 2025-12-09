@@ -1,0 +1,4 @@
+﻿# VSCode
+.vscode/
+# mkdocs-encryptcontent cache
+encryptcontent.cache
