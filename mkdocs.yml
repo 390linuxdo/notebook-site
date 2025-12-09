@@ -6,8 +6,4 @@ plugins:
       placeholder: "输入口令（可用助记词）"
       decryption_failure_message: "口令不正确"
       password_inventory:
-<<<<<<< HEAD
-        private: "ENV:MKDOCS_ENCRYPT_PASSWORD"
-=======
-        private: !ENV MKDOCS_ENCRYPTCONTENT_PASSWORD
->>>>>>> 23d7984c0485ea6e9eed79de431d8def315c18ab
+        private: !ENV MKDOCS_ENCRYPT_PASSWORD
