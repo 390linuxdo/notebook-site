@@ -40,4 +40,5 @@ plugins:
         private: !ENV [MKDOCS_ENCRYPT_PASSWORD, ""]
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js  # 加载 MathJax 支持公式渲染
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
+1
