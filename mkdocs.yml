@@ -11,4 +11,4 @@ plugins:
       placeholder: "输入口令（可用助记词）"
       decryption_failure_message: "口令不正确"
       password_inventory:
-        private: 
+        private: "ENV:MKDOCS_ENCRYPT_PASSWORD"

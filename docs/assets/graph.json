@@ -153,7 +153,7 @@
   ],
   "links": [
     {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\shell.md",
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\index.md",
       "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
       "type": "oneway",
       "dir": "a2b"
