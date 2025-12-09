@@ -1,8 +1,4 @@
-site_name: Notebook Site
-site_description: Personal notes & docs
-site_url: https://example.com/
-repo_url: https://github.com/390linuxdo/notebook-site
-repo_name: 390linuxdo/notebook-site
+site_name: Aeolira's Notes
 
 theme:
   name: material
@@ -15,9 +11,6 @@ theme:
     - toc.follow
     - search.suggest
     - search.highlight
-
-nav:
-  - 首页: index.md
 
 markdown_extensions:
   - admonition
