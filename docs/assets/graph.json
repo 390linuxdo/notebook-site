@@ -166,49 +166,7 @@
     },
     {
       "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\llm.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\macro.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
-      "type": "cross",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\linear_algebra.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\probability.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\index.md",
       "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\rag.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\shell.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\public.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\private.md",
       "type": "oneway",
       "dir": "a2b"
     },
@@ -219,8 +177,50 @@
       "dir": "a2b"
     },
     {
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\shell.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
+      "type": "oneway",
+      "dir": "a2b"
+    },
+    {
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\macro.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
+      "type": "cross",
+      "dir": "a2b"
+    },
+    {
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\public.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\private.md",
+      "type": "oneway",
+      "dir": "a2b"
+    },
+    {
       "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\index.md",
       "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\micro.md",
+      "type": "oneway",
+      "dir": "a2b"
+    },
+    {
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\index.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\probability.md",
+      "type": "oneway",
+      "dir": "a2b"
+    },
+    {
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\index.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\shell.md",
+      "type": "oneway",
+      "dir": "a2b"
+    },
+    {
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\index.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\llm.md",
+      "type": "oneway",
+      "dir": "a2b"
+    },
+    {
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\index.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\linear_algebra.md",
       "type": "oneway",
       "dir": "a2b"
     }
