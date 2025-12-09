@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\private.md",
+      "title": "私密测试文章",
+      "topic": "root",
+      "locked": true,
+      "url": "/private/",
+      "degree": 1
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\public.md",
+      "title": "public",
+      "topic": "root",
+      "locked": false,
+      "url": "/public/",
+      "degree": 1
+    }
+  ],
+  "links": [
+    {
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\public.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\private.md"
+    }
+  ]
+}

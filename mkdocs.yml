@@ -1,0 +1,19 @@
+﻿site_name: Notebook
+theme:
+  name: material
+  language: zh
+
+plugins:
+  - search
+  - encryptcontent:
+      title_prefix: "[LOCK] "
+      summary: "This page is encrypted."
+      placeholder: "Password"
+      decryption_failure_message: "Wrong password"
+      password_inventory:
+        private: !ENV MKDOCS_ENCRYPT_PASSWORD
+nav:
+  - Home: index.md
+  - Public: public.md
+  - Private: private.md
+  - Graph: graph.md
