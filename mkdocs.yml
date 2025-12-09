@@ -27,6 +27,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.arithmatex  # 添加 mathjax 支持数学公式渲染
 
 plugins:
   - search
@@ -38,5 +39,5 @@ plugins:
       password_inventory:
         private: !ENV [MKDOCS_ENCRYPT_PASSWORD, ""]
 
-# 可选：输出目录（你现在用命令行 -d site 也可以不写）
-# site_dir: site
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js  # 加载 MathJax 支持公式渲染

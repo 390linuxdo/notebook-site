@@ -1,4 +1,5 @@
-﻿# Math / 入口
+# 数学/目录
 
-- [Linear Algebra](linear_algebra.md)
-- [Probability](probability.md)
+记录数学内容
+
+- [数学公式测试](数学公式测试.md)
