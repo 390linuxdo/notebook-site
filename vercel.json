@@ -1,0 +1,4 @@
+{
+  "buildCommand": "python tools/gen_graph.py && python -m mkdocs build --clean -d site",
+  "outputDirectory": "site"
+}
