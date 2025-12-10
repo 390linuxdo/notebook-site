@@ -1,252 +1,82 @@
 {
   "nodes": [
     {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\private.md",
-      "title": "私密测试文章",
-      "topic": "root",
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\AI\\index.md",
+      "title": "AI/目录",
+      "topic": "AI",
+      "locked": false,
+      "url": "/AI/",
+      "degree": 1,
+      "code": null,
+      "hub": true
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\AI\\LLM.md",
+      "title": "LLM",
+      "topic": "AI",
+      "locked": false,
+      "url": "/AI/LLM/",
+      "degree": 1,
+      "code": null,
+      "hub": false
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\Math\\index.md",
+      "title": "数学/目录",
+      "topic": "Math",
+      "locked": false,
+      "url": "/Math/",
+      "degree": 0,
+      "code": null,
+      "hub": true
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\index.md",
+      "title": "测试/目录",
+      "topic": "测试",
+      "locked": false,
+      "url": "/测试/",
+      "degree": 2,
+      "code": null,
+      "hub": true
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\数学公式渲染.md",
+      "title": "数学公式渲染",
+      "topic": "测试",
+      "locked": false,
+      "url": "/测试/数学公式渲染/",
+      "degree": 1,
+      "code": null,
+      "hub": false
+    },
+    {
+      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\私密性测试.md",
+      "title": "私密性测试",
+      "topic": "测试",
       "locked": true,
-      "url": "/private/",
+      "url": "/测试/私密性测试/",
       "degree": 1,
-      "code": "LOCK-AD4488",
-      "hub": false
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\public.md",
-      "title": "public",
-      "topic": "root",
-      "locked": false,
-      "url": "/public/",
-      "degree": 1,
-      "code": null,
-      "hub": false
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\index.md",
-      "title": "ai",
-      "topic": "ai",
-      "locked": false,
-      "url": "/ai/",
-      "degree": 2,
-      "code": null,
-      "hub": true
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\llm.md",
-      "title": "llm",
-      "topic": "ai",
-      "locked": false,
-      "url": "/ai/llm/",
-      "degree": 1,
-      "code": null,
-      "hub": false
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\rag.md",
-      "title": "rag",
-      "topic": "ai",
-      "locked": false,
-      "url": "/ai/rag/",
-      "degree": 1,
-      "code": null,
-      "hub": false
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\Chinese\\index.md",
-      "title": "Chinese/目录",
-      "topic": "Chinese",
-      "locked": false,
-      "url": "/Chinese/",
-      "degree": 1,
-      "code": null,
-      "hub": true
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\Chinese\\昨夜雨疏风骤.md",
-      "title": "昨夜雨疏风骤",
-      "topic": "Chinese",
-      "locked": false,
-      "url": "/Chinese/昨夜雨疏风骤/",
-      "degree": 1,
-      "code": null,
-      "hub": false
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\index.md",
-      "title": "economic",
-      "topic": "economic",
-      "locked": false,
-      "url": "/economic/",
-      "degree": 2,
-      "code": null,
-      "hub": true
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\macro.md",
-      "title": "macro",
-      "topic": "economic",
-      "locked": false,
-      "url": "/economic/macro/",
-      "degree": 2,
-      "code": null,
-      "hub": false
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\micro.md",
-      "title": "micro",
-      "topic": "economic",
-      "locked": false,
-      "url": "/economic/micro/",
-      "degree": 1,
-      "code": null,
-      "hub": false
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\index.md",
-      "title": "linux",
-      "topic": "linux",
-      "locked": false,
-      "url": "/linux/",
-      "degree": 3,
-      "code": null,
-      "hub": true
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
-      "title": "network",
-      "topic": "linux",
-      "locked": false,
-      "url": "/linux/network/",
-      "degree": 3,
-      "code": null,
-      "hub": false
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\shell.md",
-      "title": "shell",
-      "topic": "linux",
-      "locked": false,
-      "url": "/linux/shell/",
-      "degree": 2,
-      "code": null,
-      "hub": false
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\vpn_notes.md",
-      "title": "VPN Notes (Encrypted)",
-      "topic": "linux",
-      "locked": true,
-      "url": "/linux/vpn_notes/",
-      "degree": 1,
-      "code": "LOCK-506945",
-      "hub": false
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\index.md",
-      "title": "math",
-      "topic": "math",
-      "locked": false,
-      "url": "/math/",
-      "degree": 2,
-      "code": null,
-      "hub": true
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\linear_algebra.md",
-      "title": "linear_algebra",
-      "topic": "math",
-      "locked": false,
-      "url": "/math/linear_algebra/",
-      "degree": 1,
-      "code": null,
-      "hub": false
-    },
-    {
-      "id": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\probability.md",
-      "title": "probability",
-      "topic": "math",
-      "locked": false,
-      "url": "/math/probability/",
-      "degree": 1,
-      "code": null,
+      "code": "LOCK-2FB65F",
       "hub": false
     }
   ],
   "links": [
     {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\index.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\数学公式渲染.md",
       "type": "oneway",
       "dir": "a2b"
     },
     {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\shell.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\AI\\index.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\AI\\LLM.md",
       "type": "oneway",
       "dir": "a2b"
     },
     {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\macro.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\rag.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\ai\\llm.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\macro.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\network.md",
-      "type": "cross",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\linear_algebra.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\public.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\private.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\economic\\micro.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\vpn_notes.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\linux\\shell.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\math\\probability.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\Chinese\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\Chinese\\昨夜雨疏风骤.md",
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\index.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\私密性测试.md",
       "type": "oneway",
       "dir": "a2b"
     }
