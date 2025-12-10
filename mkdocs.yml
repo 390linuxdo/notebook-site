@@ -27,21 +27,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.arithmatex  # 添加 mathjax 支持数学公式渲染
+  - pymdownx.arithmatex  # add MathJax render support
 
 plugins:
   - search
-  - encryptcontent:
-      title_prefix: "[LOCK] "
-      summary: "此页面已加密。请输入口令解密。"
-      placeholder: "输入口令（可用助记词）"
-      decryption_failure_message: "口令不正确"
-      password_inventory:
-        private: !ENV [MKDOCS_ENCRYPT_PASSWORD, ""]
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
   - assets/js/graph-color.js
-
-
-
+  - assets/local-encrypt.js

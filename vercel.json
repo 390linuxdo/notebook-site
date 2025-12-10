@@ -1,4 +1,4 @@
 {
-  "buildCommand": "python tools/gen_graph.py && python -m mkdocs build --clean -d site",
+  "buildCommand": "python tools/gen_graph.py && python -m mkdocs build --clean -d site && python tools/lock_pages.py",
   "outputDirectory": "site"
 }

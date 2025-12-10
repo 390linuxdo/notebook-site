@@ -73,6 +73,12 @@
   ],
   "links": [
     {
+      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\index.md",
+      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\数学公式渲染.md",
+      "type": "oneway",
+      "dir": "a2b"
+    },
+    {
       "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\AI\\index.md",
       "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\AI\\LLM.md",
       "type": "oneway",
@@ -81,12 +87,6 @@
     {
       "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\index.md",
       "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\私密性测试.md",
-      "type": "oneway",
-      "dir": "a2b"
-    },
-    {
-      "source": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\index.md",
-      "target": "C:\\博客\\notebook-site\\notebook-site\\docs\\测试\\数学公式渲染.md",
       "type": "oneway",
       "dir": "a2b"
     }
