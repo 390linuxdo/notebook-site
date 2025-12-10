@@ -5,3 +5,5 @@ encryptcontent.cache
 encryptcontent.cache
 site/
 .vscode/
+.vercel
+.env*.local
