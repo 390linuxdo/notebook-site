@@ -1,4 +1,4 @@
-﻿# 知识图谱 / 技能树
+﻿# 知识图谱 
 
 <div style="margin:8px 0">
   <label>主题筛选：</label>
